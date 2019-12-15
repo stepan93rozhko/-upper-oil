@@ -16,3 +16,7 @@ $('.feedback__grid').slick({
               res.fadeOut(100);            
           }    
       }   
+      
+
+    
+ 
