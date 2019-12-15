@@ -7,7 +7,10 @@
   padding: 0; }
 
 body {
-  background-color: #E5E5E5; }
+  background-color: #E5E5E5;
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto; }
 
 .menuTop {
   width: 1440px;
@@ -118,8 +121,10 @@ body {
 .header {
   top: -99px;
   background-color: #E5E5E5;
-  width: 100%;
+  width: 1440px;
   height: 645px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 1;
   position: relative; }
   .header__block1 {
@@ -129,6 +134,8 @@ body {
     width: 1440px;
     margin-left: auto;
     margin-right: auto; }
+    .header__block1 img {
+      width: 1440px; }
     .header__block1 h1 {
       color: #000000;
       letter-spacing: 0.03em;
@@ -452,6 +459,7 @@ body {
   height: 648px;
   background-color: white; }
   .feedback__title {
+    width: 300px;
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -544,11 +552,13 @@ body {
   width: 1440px;
   height: 282px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  position: relative; }
   .footer__menu {
     position: relative;
     left: 247px;
-    top: 30px; }
+    top: 30px;
+    width: 300px; }
     .footer__menu-ul-li {
       list-style: none;
       font-family: "Lato", sans-serif;
@@ -566,13 +576,16 @@ body {
           padding-left: 6px;
           border-left: 1px solid #FCF6F6; }
   .footer__vector {
-    position: relative;
-    top: -173px;
-    left: 639px; }
+    position: absolute;
+    top: px;
+    left: 639px;
+    width: 300px;
+    margin-right: 0; }
   .footer__tel {
     position: relative;
     bottom: 135px;
-    left: 641px; }
+    left: 641px;
+    width: 300px; }
     .footer__tel-ul-li {
       margin-bottom: 33px;
       list-style: none;
@@ -587,17 +600,6 @@ body {
         color: #FDFAFA; }
       .footer__tel-ul-li-img {
         margin-right: 16px; }
-  .footer__myName {
-    position: relative;
-    left: 1220px;
-    top: -110px; }
-    .footer__myName h2 {
-      font-size: 24px;
-      line-height: 24px;
-      font-style: normal;
-      font-weight: normal;
-      font-family: "Kaushan Script", cursive;
-      color: #FFFFFF; }
 
 /* НАСІННЯ */
 .oil-button-bad {
@@ -735,3 +737,79 @@ body {
         position: relative;
         top: 15px;
         left: 230px; }
+
+/*Карточка товару -- Олія гарбузова*/
+.card-tovar-oil-garb {
+  width: 1440px;
+  height: 1314px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative; }
+  .card-tovar-oil-garb__oil {
+    width: 558px;
+    height: 468px;
+    margin-top: 54px;
+    margin-left: 150px; }
+    .card-tovar-oil-garb__oil img {
+      width: 558px;
+      height: 468px; }
+  .card-tovar-oil-garb__main {
+    position: relative;
+    width: 500px;
+    height: 227px;
+    left: 70px;
+    top: 108px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000; }
+    .card-tovar-oil-garb__main-h3 {
+      position: relative;
+      top: 0px; }
+    .card-tovar-oil-garb__main-volume {
+      position: relative;
+      left: 0px;
+      top: 45px; }
+    .card-tovar-oil-garb__main-weight {
+      position: relative;
+      left: 0px;
+      top: 52px; }
+    .card-tovar-oil-garb__main-price {
+      position: relative;
+      left: 0px; }
+  .card-tovar-oil-garb__button {
+    position: relative;
+    left: -432px;
+    top: 385px; }
+  .card-tovar-oil-garb__text {
+    position: relative;
+    width: 500px;
+    height: 529px;
+    margin-left: 150px;
+    bottom: 34px; }
+    .card-tovar-oil-garb__text-p {
+      font-family: "Merriweather", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      text-indent: 25px;
+      color: #000000; }
+  .card-tovar-oil-garb__gar {
+    width: 561px;
+    height: 591px;
+    margin-left: 79px;
+    position: absolute;
+    right: 150px;
+    bottom: 140.6px; }
+    .card-tovar-oil-garb__gar img {
+      width: 561px;
+      height: 591px; }

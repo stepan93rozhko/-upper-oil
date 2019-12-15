@@ -29,7 +29,9 @@ $bgColorFeedbackButton: #F5F8F1;
 
 body {
     background-color: $bgColorHeader;
-    
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .menuTop{
@@ -171,8 +173,10 @@ body {
 .header{
     top: -99px;
     background-color: $bgColorHeader;
-    width: 100%;
+    width: 1440px;
     height: 645px;
+    margin-left: auto;
+    margin-right: auto;
     z-index: 1;
     position: relative;
     &__block1 {
@@ -182,6 +186,9 @@ body {
         width: 1440px;
         margin-left: auto;
         margin-right: auto;
+        & img{
+            width: 1440px;
+        }
         & h1{
             color: $textColorBlack;
             letter-spacing: 0.03em;
@@ -555,6 +562,7 @@ body {
     height: 648px;
     background-color: $bgColorAllContent;
     &__title{
+        width: 300px;
         font-family: $fontLato;
         font-style: normal;
         font-weight: normal;
@@ -664,10 +672,12 @@ body {
     height: 282px;
     margin-right: auto;
     margin-left: auto;
+    position: relative;
     &__menu{
         position: relative;
         left: 247px;
         top: 30px;
+        width: 300px;
         &-ul{
              &-li{
                 list-style: none;
@@ -693,15 +703,22 @@ body {
         }
     }
     &__vector{
-        position: relative;
-        top: -173px;
+        position: absolute;
+        top: px;
         left: 639px;
+        width: 300px;
+        margin-right: 0;
+        & img{
+            
+            
+        }
         
     }
     &__tel{
         position: relative;
         bottom: 135px;
         left: 641px;
+        width: 300px;
         
 
         &-ul{
@@ -727,19 +744,7 @@ body {
             }
         }
     }
-    &__myName{
-        position: relative;
-        left: 1220px;
-        top: -110px;
-        & h2 {
-            font-size: 24px;
-            line-height: 24px;
-            font-style: normal;
-            font-weight: normal;
-            font-family: $fontStepanRozhko;
-            color: $textColorWhite;
-        }
-    }
+ 
 
 
 }
@@ -903,4 +908,101 @@ body {
 
         }
     }
+}
+
+/*Карточка товару -- Олія гарбузова*/
+.card-tovar-oil-garb{
+    width: 1440px;
+    height: 1314px;
+    background-color: $bgColorAllContent;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    &__oil{
+        width: 558px;
+        height: 468px;
+        margin-top: 54px;
+        margin-left: 150px;
+        & img{
+            width: 558px;
+            height: 468px;
+        }
+
+    }
+    &__main{
+        position: relative;
+        width: 500px;
+        height: 227px;
+        left: 70px;
+        top: 108px;
+        font-family: $fontMerriweather;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: $textColorBlack;
+        &-h3{
+            position: relative;
+            top: 0px;
+        }
+        &-volume{
+            position: relative;
+            left: 0px;
+            top: 45px;
+        }
+        &-weight{
+            position: relative;
+            left: 0px;
+            top: 52px;
+        }
+        &-price{
+            position: relative;
+            left: 0px;
+            
+        }
+    }
+    &__button{
+        position: relative;
+        left: -432px;
+        top: 385px;
+    }
+    &__text{
+        position: relative;
+        width: 500px;
+        height: 529px;
+        margin-left: 150px;
+        bottom: 34px;
+        
+        &-p{
+            font-family: $fontMerriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            text-indent: 25px; 
+            color: $textColorBlack;
+        }
+        
+        
+    }
+    &__gar{
+        width: 561px;
+        height: 591px;
+        margin-left: 79px;
+        position: absolute;
+        right: 150px;
+        bottom: 140.6px;
+        
+        & img{
+            width: 561px;
+            height: 591px;
+        }
+    }
+
+
+
+
+
 }
