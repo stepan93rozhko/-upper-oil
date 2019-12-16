@@ -9,22 +9,20 @@
 body {
   background-color: #E5E5E5;
   width: 1440px;
-  margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  margin-right: auto; }
 
 .menuTop {
+  position: fixed;
   width: 1440px;
   height: 99px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  z-index: 2; }
+  z-index: 100; }
   .menuTop__opacity {
     width: 1440px;
     height: 99px;
     opacity: 0.75;
     background: #FDFDFD;
-    position: relative;
+    position: absolute;
     z-index: 3; }
   .menuTop img {
     position: absolute;
@@ -94,7 +92,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    right: 137px;
+    left: 1079px;
     height: 30px;
     width: 250px;
     position: absolute;
@@ -226,7 +224,7 @@ body {
   .weOffer__foto1 {
     width: 658px;
     height: 469px;
-    position: relative;
+    position: absolute;
     left: 150px;
     top: 242px; }
     .weOffer__foto1 img {
@@ -383,7 +381,7 @@ body {
     left: -15px;
     z-index: 4; }
   .howWeWork__blocks {
-    position: relative;
+    position: absolute;
     z-index: 5;
     display: -ms-grid;
     display: grid;
@@ -393,7 +391,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1px;
     width: 1010px;
-    top: 91px;
+    top: 246px;
     left: 247px; }
     .howWeWork__blocks-block {
       width: 73px;
@@ -419,8 +417,8 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    position: relative;
-    top: 142px;
+    position: absolute;
+    top: 371px;
     left: 170px;
     display: -ms-grid;
     display: grid;
@@ -453,12 +451,14 @@ body {
   float: right; }
 
 .feedback {
+  position: relative;
   margin-right: auto;
   margin-left: auto;
   width: 1440px;
   height: 648px;
   background-color: white; }
   .feedback__title {
+    margin-top: 60px;
     width: 300px;
     font-family: "Lato", sans-serif;
     font-style: normal;
@@ -466,9 +466,8 @@ body {
     font-size: 48px;
     line-height: 58px;
     color: #000000;
-    position: relative;
-    left: 635px;
-    top: 60px; }
+    position: absolute;
+    left: 635px; }
   .feedback .slick-prev {
     width: 39px;
     height: 39px;
@@ -530,9 +529,11 @@ body {
         height: 35px;
         margin-bottom: 11px; }
   .feedback__button {
-    position: relative;
+    position: absolute;
+    margin-top: 242px;
     left: 623px;
-    top: 227px;
+    margin-left: auto;
+    margin-right: auto;
     width: 194px;
     height: 57px;
     background-color: #F5F8F1;
@@ -555,7 +556,7 @@ body {
   margin-left: auto;
   position: relative; }
   .footer__menu {
-    position: relative;
+    position: absolute;
     left: 247px;
     top: 30px;
     width: 300px; }
@@ -577,13 +578,13 @@ body {
           border-left: 1px solid #FCF6F6; }
   .footer__vector {
     position: absolute;
-    top: px;
+    top: 44px;
     left: 639px;
     width: 300px;
     margin-right: 0; }
   .footer__tel {
-    position: relative;
-    bottom: 135px;
+    position: absolute;
+    top: 105px;
     left: 641px;
     width: 300px; }
     .footer__tel-ul-li {
