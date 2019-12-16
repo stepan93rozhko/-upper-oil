@@ -30,145 +30,146 @@ $bgColorFeedbackButton: #F5F8F1;
 body {
     background-color: $bgColorHeader;
     width: 1440px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .menuTop{
-    width: 1440px;
-    height: 99px;
     
-    margin-left: auto;
-    margin-right: auto;
-    
-    position: relative;
-    z-index: 2;
-    
-    &__opacity{
+        position: fixed;
         width: 1440px;
         height: 99px;
-        opacity: 0.75;
-        background: $bgColorMenuTop;
-        position: relative;
-        z-index: 3;
-    }
-    & img{
-        position: absolute;
-        left: 157px;
-        top: 2px;
-        z-index: 4;
-       
-    }
-    &__menu{
-        position: relative;
-        left: 442px;
-        top: 39px;
-        z-index: 4;
         
-        & ul{
-
-               & li{
-                   list-style: none;
-                   height: 19px;
-                   font-family: $fontLato;
-                   font-style: normal;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 19px;
-                    float: left;
-                    margin-left: 16px;
-                    margin-right: 16px;
-                    color: $textColorBlack;
-                    cursor: pointer;
-                    &:hover{
-                        border-bottom: 2px solid black;
-                        padding-bottom: 3px;
-                    }
-                    & a{
-                        text-decoration: none;
+        
+        z-index: 100;
+        
+        &__opacity{
+            width: 1440px;
+            height: 99px;
+            opacity: 0.75;
+            background: $bgColorMenuTop;
+            position: absolute;
+            z-index: 3;
+        }
+        & img{
+            position: absolute;
+            left: 157px;
+            top: 2px;
+            z-index: 4;
+           
+        }
+        &__menu{
+            position: relative;
+            left: 442px;
+            top: 39px;
+            z-index: 4;
+            
+            & ul{
+    
+                   & li{
+                       list-style: none;
+                       height: 19px;
+                       font-family: $fontLato;
+                       font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 19px;
+                        float: left;
+                        margin-left: 16px;
+                        margin-right: 16px;
                         color: $textColorBlack;
-                        
-                    }
-                   
-
-            }
-        }
-    }
-    &__out{
-        width: 70px;
-        height: 150px;
-        position: relative;
-        z-index: 10;
-        display: none;
-        &-opac{
-            width: 100px;
-            height: 70px;
-            opacity: .75;
-            background: #FDFDFD;
-            position: relative;
-            left: 635px;
-            
-            
-        }
-        & ul{
-            position: relative;
-            left: 655px;
-            top: -90px;
-            & li{
-                font-family: $fontLato;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 16px;
-                line-height: 19px;
-                list-style: none;
-                padding-bottom: 15px;
-                
-                & a{
-                    text-decoration: none;
-                    color: $textColorBlack;
-                    &:hover{
-                        font-weight: 600;
-                        color: #619409; 
-                        border-bottom: 1px solid black;
-                        padding-bottom: 5px;
-                    }
-                   
+                        cursor: pointer;
+                        &:hover{
+                            border-bottom: 2px solid black;
+                            padding-bottom: 3px;
+                        }
+                        & a{
+                            text-decoration: none;
+                            color: $textColorBlack;
+                            
+                        }
+                       
+    
                 }
             }
         }
-    }
-    &__mob {
-       display: flex;
-       flex-wrap: wrap;
-       right: 137px;
-       height: 30px;
-       width: 250px;
-       position: absolute;
-       top: 0px;
-       z-index: 4;
-       top: 34px;
-       & h2{
-        top: 4px;
-        height: 24px;
-        position: relative;
-        right: -50px;
-        font-family: $fontLato;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        & a{
-            text-decoration: none;
-            color: $textColorBlack;
-        }
-        }
-        & img {
+        &__out{
+            width: 70px;
+            height: 150px;
             position: relative;
-            left: 36px;
-            
+            z-index: 10;
+            display: none;
+            &-opac{
+                width: 100px;
+                height: 70px;
+                opacity: .75;
+                background: #FDFDFD;
+                position: relative;
+                left: 635px;
+                
+                
+            }
+            & ul{
+                position: relative;
+                left: 655px;
+                top: -90px;
+                & li{
+                    font-family: $fontLato;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    list-style: none;
+                    padding-bottom: 15px;
+                    
+                    & a{
+                        text-decoration: none;
+                        color: $textColorBlack;
+                        &:hover{
+                            font-weight: 600;
+                            color: #619409; 
+                            border-bottom: 1px solid black;
+                            padding-bottom: 5px;
+                        }
+                       
+                    }
+                }
+            }
+        }
+        &__mob {
+           display: flex;
+           flex-wrap: wrap;
+           left: 1079px;
+           height: 30px;
+           width: 250px;
+           position: absolute;
+           top: 0px;
+           z-index: 4;
+           top: 34px;
+           & h2{
+            top: 4px;
+            height: 24px;
+            position: relative;
+            right: -50px;
+            font-family: $fontLato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 24px;
+            & a{
+                text-decoration: none;
+                color: $textColorBlack;
+            }
+            }
+            & img {
+                position: relative;
+                left: 36px;
+                
+            }
         }
     }
-}
+    
 
 .header{
     top: -99px;
@@ -297,7 +298,7 @@ body {
     &__foto1{
         width: 658px;
         height: 469px;
-        position: relative;
+        position: absolute;
         left: 150px;
         top: 242px;
         & img{
@@ -479,14 +480,14 @@ body {
         z-index: 4;
     }
     &__blocks{
-        position: relative;
+        position: absolute;
         z-index: 5;
         display: grid;
         grid-template-rows: 1fr ;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-gap: 1px;
         width: 1010px;
-        top: 91px;
+        top: 246px;
         left: 247px;
        
 
@@ -516,8 +517,8 @@ body {
     &__text{
         display: flex;
         flex-wrap: wrap;
-        position: relative;
-        top: 142px;
+        position: absolute;
+        top: 371px;
         left: 170px;
         display: grid;
         grid-template-rows: 1fr ;
@@ -555,13 +556,15 @@ body {
     float: right;
 }
 .feedback{
-    
+    position: relative;
     margin-right: auto;
     margin-left: auto;
     width: 1440px;
     height: 648px;
     background-color: $bgColorAllContent;
+    
     &__title{
+        margin-top: 60px;
         width: 300px;
         font-family: $fontLato;
         font-style: normal;
@@ -569,9 +572,9 @@ body {
         font-size: 48px;
         line-height: 58px;
         color: $colorblack;
-        position: relative;
-        left: 635px;
-        top: 60px;
+        position: absolute;
+        left: 635px; 
+        
     }
     & .slick-prev {
        width: 39px;
@@ -646,9 +649,11 @@ body {
         }
     }
     &__button{
-        position: relative;
+        position: absolute;
+        margin-top: 242px;
         left: 623px;
-        top: 227px;
+        margin-left: auto;
+        margin-right: auto;
         width: 194px;
         height: 57px;
         background-color: $bgColorFeedbackButton;
@@ -674,7 +679,7 @@ body {
     margin-left: auto;
     position: relative;
     &__menu{
-        position: relative;
+        position: absolute;
         left: 247px;
         top: 30px;
         width: 300px;
@@ -704,19 +709,14 @@ body {
     }
     &__vector{
         position: absolute;
-        top: px;
+        top: 44px;
         left: 639px;
         width: 300px;
         margin-right: 0;
-        & img{
-            
-            
-        }
-        
     }
     &__tel{
-        position: relative;
-        bottom: 135px;
+        position: absolute;
+        top: 105px;
         left: 641px;
         width: 300px;
         
@@ -744,9 +744,6 @@ body {
             }
         }
     }
- 
-
-
 }
 
 
