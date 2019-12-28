@@ -22,6 +22,19 @@ $bgColorFeedbackButton: #F5F8F1;
 .w24{
     font-size: 24px;
 }
+
+
+
+.vector-prod:hover + path{
+        fill:  #10158C;
+    }
+   
+
+
+ .fill:hover{
+        fill: #10158C;
+    }
+
 *{
     margin: 0;
     padding: 0;
@@ -81,7 +94,7 @@ body {
                         color: $textColorBlack;
                         cursor: pointer;
                         &:hover{
-                            border-bottom: 2px solid black;
+                            border-bottom: 3px solid #619409;
                             padding-bottom: 3px;
                         }
                         & a{
@@ -322,6 +335,23 @@ body {
             color: $textColorBlack;
         }
     }
+    &__body-top{
+        width: 431px;
+        height: 367px;
+        position: absolute;
+        top: 283px;
+        right: 150px;
+        z-index: 5;
+        & p{
+            font-family: $fontMerriweather;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+            text-indent: 25px;
+            color: $textColorBlack;
+        }
+    }
     &__foto2{
         position: absolute;
         right: 150px;
@@ -396,11 +426,19 @@ body {
         top: 200px;
         left: 152px;
         &-prod{
+            & img:hover{
+               border-radius: 10px;
+               box-shadow: 0 0 10px $bgColorButtonGreen;
+               transition: 0.2s;
+               transform: scale(1.04);
+            }
             &-vectorMod{
                 position: absolute;
                 right: 97px;
                 bottom: 172px;
-               
+               & path:hover{
+                box-shadow: 0 0 10px $bgColorButtonGreen;
+               }
             } 
             &-button{
                 background-color: $bgColorButtonGreen;
@@ -414,6 +452,10 @@ body {
                 font-size: 16px;
                 line-height: 20px;
                 color: $textColorWhite;
+                &:hover{
+                    box-shadow: 0 0 10px $bgColorButtonGreen;
+                    padding: 10px;
+                }
             }
             & h3{
                 font-family: $fontMerriweather;
@@ -659,6 +701,10 @@ body {
         background-color: $bgColorFeedbackButton;
         border: 4px solid #619409;
         box-sizing: border-box;
+        &:hover{
+            box-shadow: 0 0 10px $bgColorButtonGreen;
+            padding: 10px;
+        }
         &-text{
             font-family: $fontMerriweather;
             font-style: normal;
@@ -684,7 +730,7 @@ body {
         top: 30px;
         width: 300px;
         &-ul{
-             &-li{
+            &-li{
                 list-style: none;
                 font-family: $fontLato;
                 font-style: normal;
@@ -711,19 +757,24 @@ body {
         position: absolute;
         top: 44px;
         left: 639px;
-        width: 300px;
+        width: 27px;
+        height: 27px;
         margin-right: 0;
+        
+        & path:hover{
+            fill: #10158C;
+        }
     }
+      
+
     &__tel{
-        position: absolute;
-        top: 105px;
-        left: 641px;
-        width: 300px;
+    position: absolute;
+    top: 105px;
+    left: 641px;
+    width: 300px;
         
 
         &-ul{
-            
-
             &-li{
                 margin-bottom: 33px;
                 list-style: none;
@@ -797,7 +848,12 @@ body {
             height: 407px;
             & img{
                 width: 356px;
+                &:hover{
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px $bgColorButtonGreen;
+                 }
             }
+            
             &-price{
                 position: relative;
                 top: 80px;
@@ -839,6 +895,10 @@ body {
             
             & img{
                 width: 363px;
+                &:hover{
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px $bgColorButtonGreen;
+                 }
             }
             &-h3{
                 position: relative;
@@ -884,6 +944,10 @@ body {
         
             & img{
                 width: 365px;
+                &:hover{
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px $bgColorButtonGreen;
+                 }
             }
             &-h3{
                 position: relative;
