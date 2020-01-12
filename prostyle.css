@@ -315,7 +315,9 @@ body {
       font-style: normal;
       font-weight: normal;
       font-size: 48px;
-      line-height: 58px; }
+      line-height: 58px;
+      width: 456px;
+      text-align: center; }
   .products__grid {
     display: -ms-grid;
     display: grid;
@@ -402,7 +404,9 @@ body {
       font-weight: normal;
       font-size: 48px;
       line-height: 58px;
-      color: #000000; }
+      color: #000000;
+      width: 371px;
+      text-align: center; }
   .howWeWork__bgFoto {
     position: absolute;
     top: 50px;
@@ -565,10 +569,11 @@ body {
     box-sizing: border-box;
     position: absolute;
     left: 460px;
-    bottom: 120px;
+    bottom: 100px;
     z-index: 200;
     -webkit-box-shadow: 0 0 10px #619409;
     box-shadow: 0 0 10px #619409;
+    position: fixed;
     display: none; }
     .feedback__response-form-vector {
       position: absolute;
@@ -1014,3 +1019,129 @@ body {
     .card-tovar-oil-garb__gar img {
       width: 561px;
       height: 591px; }
+
+.form-order {
+  display: none;
+  width: 900px;
+  height: 550px;
+  background-color: #E5E5E5;
+  position: fixed;
+  top: 110px;
+  left: 300px;
+  z-index: 100;
+  -webkit-box-shadow: 0 0 10px #619409;
+  box-shadow: 0 0 10px #619409;
+  border-radius: 20px; }
+  .form-order__form {
+    width: 558px;
+    height: 467px;
+    background: #FDF9F9;
+    border: 1px solid #C4C4C4;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 171px;
+    top: 41.5px;
+    -webkit-box-shadow: 0 0 10px #619409;
+    box-shadow: 0 0 10px #619409;
+    border-radius: 20px; }
+    .form-order__form-h2 {
+      width: 241px;
+      height: 81px;
+      font-family: "Merriweather", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      color: #000000;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 43px; }
+    .form-order__form-p1 {
+      width: 47px;
+      height: 25px;
+      font-family: "Merriweather", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      margin-left: 97px;
+      margin-top: 21px; }
+      .form-order__form-p1-input1 {
+        width: 364px;
+        height: 40px;
+        background: #FFFBFB;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 36px;
+        font-family: "Merriweather", serif; }
+    .form-order__form-p2 {
+      width: 178px;
+      height: 25px;
+      font-family: "Merriweather", serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      margin-left: 97px;
+      margin-top: 79px; }
+      .form-order__form-p2-input2 {
+        width: 364px;
+        height: 40px;
+        background: #FFFDFD;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 36px;
+        font-family: "Merriweather", serif; }
+    .form-order__form-button {
+      width: 170px;
+      height: 40px;
+      background-color: #619409;
+      border: none;
+      position: absolute;
+      left: 195px;
+      bottom: 55px;
+      font-family: "Merriweather", serif;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 25px;
+      color: #FFFFFF; }
+      .form-order__form-button:hover {
+        -webkit-box-shadow: 0 0 15px #619409;
+        box-shadow: 0 0 15px #619409; }
+
+/*Дякую за відгук/замовлення*/
+.feedback__thank-you {
+  display: none;
+  width: 412px;
+  height: 312px;
+  position: fixed;
+  background: #FCF5F5;
+  border: 1px solid #C4C4C4;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 10000;
+  top: 190px;
+  left: 550px;
+  -webkit-box-shadow: 0 0 70px #619409;
+  box-shadow: 0 0 70px #619409; }
+  .feedback__thank-you-img {
+    margin-left: 45px;
+    margin-top: 51px; }
+  .feedback__thank-you-p {
+    width: 327px;
+    height: 25px;
+    font-family: "Merriweather", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    margin-left: 43px;
+    margin-top: 50px; }
